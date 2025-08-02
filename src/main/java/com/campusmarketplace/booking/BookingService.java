@@ -16,7 +16,7 @@ public class BookingService {
 
     public Booking createBooking(Booking booking) {
         booking.setStatus("PENDING");
-        booking.setCreatedAt(LocalDateTime.now());D
+        booking.setCreatedAt(LocalDateTime.now());
         return bookingRepository.save(booking);
     }
 
